@@ -48,6 +48,8 @@ a {
     text-align: center;
     text-decoration: none;
 }
+#main a:hover{color: aqua;}
+#main a:focus{color: rgb(255, 108, 97);}
 
 #imtitle {width: 100%;}
 
