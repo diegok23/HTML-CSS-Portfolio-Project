@@ -42,3 +42,9 @@ article {
 }
 
 h3.titart {color:#fd9380;}
+
+a {
+    color: rgb(255, 0, 0);
+    text-align: center;
+    text-decoration: none;
+}
