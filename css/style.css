@@ -13,6 +13,7 @@ body {
 	background-color: #ffffff;
     background-image: linear-gradient(#ffffff, #afafaf);
 	font-size: 12pt;
+    height: 100vh;
 }
 
 /* header */   
@@ -115,6 +116,11 @@ h3 {
 
 /* Footer */
 
-.footer {text-align: center;}
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
 .linkfoot {margin:15px;}
