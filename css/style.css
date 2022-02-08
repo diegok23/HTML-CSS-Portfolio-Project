@@ -9,14 +9,17 @@
 
  /* body */
 
- body {
+body {
 	background-color: #ffffff;
     background-image: linear-gradient(#ffffff, #afafaf);
-	font-family: "Roboto", Helvetica, sans-serif;
 	font-size: 12pt;
 }
 
 /* header */   
+
+.header {
+    font-family: "Roboto", Helvetica, sans-serif;
+}
 
 h1 {
     color: #ff2929;
@@ -24,7 +27,7 @@ h1 {
     margin: 20px;
     font-family: "Kanit", sans-serif;
     font-size: 3em;
-    text-shadow: 1px 1px 3px black, 0 0 25px rgb(43, 43, 43), 0 0 15px darkgray;
+    text-shadow: 1px 1px 3px black, 0 0 25px #2b2b2b, 0 0 15px darkgray;
 }
     
 h2 {
@@ -47,27 +50,19 @@ h3 {
     line-height: 20%;
 }
 
-p:first-child {
-    color: #740000;
-}
-
 /* articles */
 
 .main {
+    font-family: "Roboto", Helvetica, sans-serif;
     text-align: center;
 }
 
-.main a:hover {
-    color: aqua;
-    font-weight: 500;
+.main :first-child h3{
+    font-style: italic;
+    color: #00279c;
 }
 
-.main a:focus {
-    color: #ff6c61;
-    font-weight: 500;
-}
-
-article {
+.article {
     color: #000000;
     background-color: #ffffff;
     margin: 1em 1em 1em 1em;
@@ -77,17 +72,11 @@ article {
     box-shadow: 5px 10px 15px #1a1a1a;
 }
 
-article:hover {
-    background-color: #cecece;
+.article:hover {
+    background-color: #d8d8d8;
     transform: scale(1.05);
     box-shadow: 5px 10px 15px #000000;
     opacity: 1;
-}
-
-article p {
-    margin: 5px 5px;
-    height: 70px;
-    width: 95%;
 }
 
 .artimg {
@@ -96,16 +85,32 @@ article p {
     object-fit: cover;
 }
 
-h3.titart {
+.titart {
     color:#3a0900;
 }
 
-article a {
+.article p {
+    margin: 5px 5px;
+    height: 70px;
+    width: 95%;
+}
+
+.article a {
     color: #5f0000;
+    line-height: 30px;
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 15px;
     text-decoration: none;
+}
+
+.article a:hover {
+    color: #004949;
+    font-weight: 500;
+    transition-duration: 1.5s;
+}
+
+.article a:focus {
+    color: #470500;
+    font-weight: 500;
 }
 
 /* Footer */
